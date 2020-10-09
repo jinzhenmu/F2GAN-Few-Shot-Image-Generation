@@ -110,7 +110,7 @@ More generated reuslts to view [here]()
 
 * Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks [paper](https://arxiv.org/pdf/1703.03400.pdf)  [code](https://github.com/cbfinn/maml)
 
-* Learning to Compare: Relation Network for Few-Shot Learning [paper](ttps://arxiv.org/pdf/1711.06025.pdf)  [code](https://github.com/floodsung/LearningToCompare_FSL)
+* Learning to Compare: Relation Network for Few-Shot Learning [paper](https://arxiv.org/pdf/1711.06025.pdf)  [code](https://github.com/floodsung/LearningToCompare_FSL)
 
 * DPGN: Distribution Propagation Graph Network for Few-shot Learning [paper](https://arxiv.org/pdf/2003.14247.pdf )  [code](https://github.com/megvii-research/DPGN)
 
