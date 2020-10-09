@@ -84,7 +84,7 @@ More generated reuslts to view [here](https://arxiv.org/pdf/2008.01999.pdf)
 
   Categories/Samples:** 102/ 8189
   
-  Split:** 85 seen classes, 17 unseen classes
+  Split: 85 seen classes, 17 unseen classes
       
 - **Animal Faces**
 
@@ -142,7 +142,8 @@ pip install -r requirements.txt
 
 ### Trained Model
 
-COMING SOON !
+Downloading trained models on Omniglot, EMNIST, VGGFace, Flowers, and Animal Faces datasets from [here](https://pan.baidu.com/s/1Dobdh9W6GUe1AX60hseMBQ), 提取码 vpwy.
+
 
 ### Training
 
@@ -180,7 +181,6 @@ python train_dagan_with_matchingclassifier.py --dataset animsl --image_width 96 
 
 ### Testing
 
-0. Downloading trained models on selected datasets from [here](https://pan.baidu.com/s/1Dobdh9W6GUe1AX60hseMBQ), 提取码 vpwy, and setting the '--restore_path' as the path of downloaded model
 
 1.Test our best model on Omniglot
 
