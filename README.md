@@ -90,7 +90,32 @@ Few-shot image generation aims at generating images for a new category with only
   Categories/Samples: 149/ 214105
   
   Split: 119 seen classes, 30 unseen classes
+  
+  
+## Baselines
 
+### Few-shot Image Generation
+
+* FIGR: Few-shot Image Generation with Reptile [paper](http://proceedings.mlr.press/v84/bartunov18a/bartunov18a.pdf)[code](ttps://github.com/sbos/gmn)
+
+* Few-shot Generative Modelling with Generative Matching Networks [paper](http://proceedings.mlr.press/v84/bartunov18a/bartunov18a.pdf)[code](https://github.com/sbos/gmn)
+
+* DAWSON: A do- main adaptive few shot generation framework[paper](https://arxiv.org/pdf/2001.00576)[code](https://github.com/LC1905/musegan/)
+
+* Data Augmentation Generative Adversarial Networks[paper](https://arxiv.org/pdf/1711.04340)[code](https://github.com/AntreasAntoniou/DAGAN)
+
+### Few-shot Image Classification
+* Matching Networks for One Shot Learning [paper](https://arxiv.org/pdf/1606.04080.pdf)[code](https://github.com/AntreasAntoniou/MatchingNetworks)
+
+* Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks [paper](https://arxiv.org/pdf/1703.03400.pdf)[code](https://github.com/cbfinn/maml)
+
+* Learning to Compare: Relation Network for Few-Shot Learning [paper](ttps://arxiv.org/pdf/1711.06025.pdf )[code](https://github.com/floodsung/LearningToCompare_FSL)
+
+* DPGN: Distribution Propagation Graph Network for Few-shot Learning [paper](https://arxiv.org/pdf/2003.14247.pdf )[code](https://github.com/megvii-research/DPGN)
+
+* Meta-Transfer Learning for Few-Shot Learning [paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Meta-Transfer_Learning_for_Few-Shot_Learning_CVPR_2019_paper.pdf)[code](https://github.com/y2l/meta-transfer-learning-tensorflow)
+
+* Cross-Domain Few-Shot Classification via Learned Feature-Wise Transformation [paper](https://arxiv.org/pdf/2001.08735.pdf)[code](https://github.com/y2l/meta-transfer-learning-tensorflow)
 
 
 
