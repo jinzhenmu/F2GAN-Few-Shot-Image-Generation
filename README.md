@@ -112,7 +112,7 @@ Few-shot image generation aims at generating images for a new category with only
 
 #### Few-shot Image Classification
 
-![](figures/few_shot.jpg)
+![](figures/fewshot.jpg)
 
 
 
