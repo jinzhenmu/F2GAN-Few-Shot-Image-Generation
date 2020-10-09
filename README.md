@@ -6,9 +6,6 @@ Created by [Yan Hong](https://github.com/hy-zpg),  [Li Niu\*](https://github.com
 
 Paper Link: [[arXiv]](https://arxiv.org/pdf/2008.01999.pdf)
 
-%## News
-
-%In our journal extension *CaGNetv2* \[[arXiv](https://arxiv.org/abs/2009.12232), [github](https://github.com/bcmi/CaGNetv2-Zero-Shot-Semantic-Segmentation)\], we extend pixel-wise feature generation and finetuning to patch-wise feature generation and finetuning.
 
 ## Visualization on Selected Five Datasets 
 
@@ -31,14 +28,14 @@ If you find our work useful in your research, please consider citing:
 
 Few-shot image generation aims at generating images for a new category with only a few images, which can make fast adaptation to a new category especially for those newly emerging categories or long-tail categories, and benefit a wide range of downstream category-aware tasks like few-shot classification. In this paper, we propose a novel fusing-and-filling GAN (F2GAN) to enhance the ability of fusing conditional images. The high-level idea is fusing the high-level features of conditional images and filling in the details of generated image with relevant low-level features of conditional images. In detail, our method contains a fusion generator and a fusion discriminator. In our generator, we interpolate the high-level bottleneck features of multiple conditional images with random interpolation coefficients. Then, the fused high-level feature is upsampled through the decoder to produce a new image. In each upsampling stage, we borrow missing details from the skip-connected shallow encoder block by using our Non-local Attentional Fusion (NAF) module. Precisely, NAF module searches the outputs from shallow encoder blocks of conditional images in a global range, to attend the information of interest for each location in the generated image. In the fusion discriminator, we employ typical adversarial loss and classification loss to enforce the generated images to be close to real images and from the same category of conditional images. To ensure the diversity of generated images, we additionally employ a mode seeking loss and an interpolation regression loss, both of which are related to interpolation coefficients. We have conducted extensive generation and classification experiments on five datasets to demonstrated the effectiveness of our method.
 
-[![Overview of Our CaGNet](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/three/main/figures/combo.jpg?raw=true)](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/three/main/figures/combo.jpg?raw=true)
+[![Overview of Our CaGNet](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/three/main/figures/framework.png?raw=true)](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/three/main/figures/framework.png?raw=true)
 
 
 
 
 
 ## Poster Presentation
-[![Poster]](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/master/figures/poster.png?raw=true)
+[![Poster](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/three/main/figuresF2GAN_ACMMM_poster.jpg?raw=true)](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/three/main/figuresF2GAN_ACMMM_poster.jpg?raw=true)
 
 
 ## Experiments
@@ -56,7 +53,7 @@ Few-shot image generation aims at generating images for a new category with only
   
   ** scipy  
   
-- Click [here](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/master/environment.ymal) to view detailed software dependency            
+- Click [here](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/three/main/requirements.txt) to view detailed software dependency            
   
 
 ### Datasets Preparation 
@@ -99,14 +96,15 @@ Few-shot image generation aims at generating images for a new category with only
 ### Results
 
 #### Visualization of Generated Images
-[![Vislualization]](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/master/figures/overview.JPG?raw=true)
+
+[![Vislualization]](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/three/main/figures/combo.jpg?raw=true)
 
 #### Low-data Image Classification
-[![C1]](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/master/figures/low_data.JPG?raw=true)
+[![Low-data Image Classification](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/master/figures/lowdata.jpg?raw=true)
 
 
 #### Few-shot Image Classification
-[![C2]](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/master/figures/few_shot.JPG?raw=true)
+[![Few-shot Image Classification]](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/master/figures/few_shot.jpg?raw=true)
 
 
 ## Getting Started
@@ -119,10 +117,10 @@ Few-shot image generation aims at generating images for a new category with only
 git clone https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation.git
 ```
 
-2.Create python environment for *CaGNet* via conda.
+2.Create python environment for *F2GAN* via pip.
 
 ```
-conda env create -f F2GAN_environment.yaml
+pip install -r requirements.txt
 ```
 
 
