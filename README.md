@@ -32,6 +32,7 @@ Few-shot image generation aims at generating images for a new category with only
 
 ## Visualization 
 ![](figures/combo.jpg)
+More generated reuslts to view [here]()
 
 
 
