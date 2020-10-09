@@ -30,6 +30,8 @@ Few-shot image generation aims at generating images for a new category with only
 
 
 
+## Visualization 
+![](figures/combo.jpg)
 
 
 
@@ -95,9 +97,9 @@ Few-shot image generation aims at generating images for a new category with only
 
 ### Results
 
-#### Visualization of Generated Images
+#### GAN metrics of Generated Images
 
-![](figures/combo.jpg)
+![](figures/metric.jpg)
 
 
 #### Low-data Image Classification
