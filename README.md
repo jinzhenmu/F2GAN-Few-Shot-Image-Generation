@@ -32,7 +32,7 @@ Few-shot image generation aims at generating images for a new category with only
 
 ## Visualization 
 ![](figures/combo.jpg)
-More generated reuslts to view [here]()
+More generated reuslts to view [here](https://arxiv.org/pdf/2008.01999.pdf)
 
 
 
@@ -180,10 +180,25 @@ python train_dagan_with_matchingclassifier.py --dataset animsl --image_width 96 
 
 ### Testing
 
-1.Test our best model on VGGFace
+0. Downloading trained models on selected datasets from [here](https://pan.baidu.com/s/1Dobdh9W6GUe1AX60hseMBQ), 提取码 vpwy, and setting the '--restore_path' as the path of downloaded model
+
+1.Test our best model on Omniglot
 
 ```
-python test_dagan_with_matchingclassifier_for_generation.py  --is_training 0 --is_all_test_categories 1 --is_generation_for_classifier 1  --general_classification_samples 10 --dataset vggface --image_width 96  --batch_size 30  --num_generations 128 --experiment_title EVALUATION_Augmented_vggface_F2GAN --selected_classes 1 --support_number 3   --restore_path   --continue_from_epoch 
+python test_dagan_with_matchingclassifier_for_generation.py  --is_training 0 --is_all_test_categories 1 --is_generation_for_classifier 1  --general_classification_samples 10 --dataset omniglot --image_width 96  --batch_size 30  --num_generations 28 --experiment_title EVALUATION_Augmented_omniglot_F2GAN --selected_classes 1 --support_number 3   --restore_path path ./trained_models/omniglot/ --continue_from_epoch 100
+```
+
+2.Test our best model on EMNIST
+
+```
+python test_dagan_with_matchingclassifier_for_generation.py  --is_training 0 --is_all_test_categories 1 --is_generation_for_classifier 1  --general_classification_samples 10 --dataset emnist --image_width 96  --batch_size 30  --num_generations 28 --experiment_title EVALUATION_Augmented_emnist_F2GAN --selected_classes 1 --support_number 3   --restore_path   ./trained_models/emnist/  --continue_from_epoch 100
+```
+
+
+3.Test our best model on VGGFace
+
+```
+python test_dagan_with_matchingclassifier_for_generation.py  --is_training 0 --is_all_test_categories 1 --is_generation_for_classifier 1  --general_classification_samples 10 --dataset vggface --image_width 96  --batch_size 30  --num_generations 128 --experiment_title EVALUATION_Augmented_vggface_F2GAN --selected_classes 1 --support_number 3   --restore_path  path  ./trained_models/vggface/  --continue_from_epoch 100
 ```
 
 ```
@@ -192,10 +207,10 @@ python GAN_metrcis_FID_IS_LPIPS.py  --dataroot_real ./EVALUATION/Augmented/vggfa
 ```
 
 
-2.Test our best model on Flowers
+4.Test our best model on Flowers
 
 ```
-python test_dagan_with_matchingclassifier_for_generation.py  --is_training 0 --is_all_test_categories 1 --is_generation_for_classifier 1  --general_classification_samples 10 --dataset flowers --image_width 96  --batch_size 30  --num_generations 128 --experiment_title EVALUATION_Augmented_flowers_F2GAN --selected_classes 1 --support_number 3   --restore_path   --continue_from_epoch 
+python test_dagan_with_matchingclassifier_for_generation.py  --is_training 0 --is_all_test_categories 1 --is_generation_for_classifier 1  --general_classification_samples 10 --dataset flowers --image_width 96  --batch_size 30  --num_generations 128 --experiment_title EVALUATION_Augmented_flowers_F2GAN --selected_classes 1 --support_number 3   --restore_path path   ./trained_models/flowers/  --continue_from_epoch  100
 
 ```
 
@@ -206,10 +221,10 @@ python GAN_metrcis_FID_IS_LPIPS.py  --dataroot_real ./EVALUATION/Augmented/flowe
 ```
 
 
-3.Test our best model on Animal Faces
+5.Test our best model on Animal Faces
 
 ```
-python test_dagan_with_matchingclassifier_for_generation.py  --is_training 0 --is_all_test_categories 1 --is_generation_for_classifier 1  --general_classification_samples 10 --dataset animals --image_width 96  --batch_size 30  --num_generations 128 --experiment_title EVALUATION_Augmented_animals_F2GAN --selected_classes 1 --support_number 3   --restore_path   --continue_from_epoch 
+python test_dagan_with_matchingclassifier_for_generation.py  --is_training 0 --is_all_test_categories 1 --is_generation_for_classifier 1  --general_classification_samples 10 --dataset animals --image_width 96  --batch_size 30  --num_generations 128 --experiment_title EVALUATION_Augmented_animals_F2GAN --selected_classes 1 --support_number 3   --restore_path   ./trained_models/animals/  --continue_from_epoch 100
 ```
 
 ```
