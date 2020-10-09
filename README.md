@@ -100,9 +100,9 @@ Few-shot image generation aims at generating images for a new category with only
 
 * Few-shot Generative Modelling with Generative Matching Networks [paper](http://proceedings.mlr.press/v84/bartunov18a/bartunov18a.pdf)  [code](https://github.com/sbos/gmn)
 
-* DAWSON: A do- main adaptive few shot generation framework[paper](https://arxiv.org/pdf/2001.00576)  [code](https://github.com/LC1905/musegan/)
+* DAWSON: A do- main adaptive few shot generation framework [paper](https://arxiv.org/pdf/2001.00576)  [code](https://github.com/LC1905/musegan/)
 
-* Data Augmentation Generative Adversarial Networks[paper](https://arxiv.org/pdf/1711.04340)  [code](https://github.com/AntreasAntoniou/DAGAN)
+* Data Augmentation Generative Adversarial Networks [paper](https://arxiv.org/pdf/1711.04340)  [code](https://github.com/AntreasAntoniou/DAGAN)
 
 ### Few-shot Image Classification
 * Matching Networks for One Shot Learning [paper](https://arxiv.org/pdf/1606.04080.pdf)  [code](https://github.com/AntreasAntoniou/MatchingNetworks)
