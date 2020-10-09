@@ -140,9 +140,6 @@ pip install -r requirements.txt
 ```
 
 
-### Trained Model
-
-Downloading trained models on Omniglot, EMNIST, VGGFace, Flowers, and Animal Faces datasets from [here](https://pan.baidu.com/s/1Dobdh9W6GUe1AX60hseMBQ), 提取码 vpwy.
 
 
 ### Training
@@ -177,6 +174,20 @@ python train_dagan_with_matchingclassifier.py --dataset flowers --image_width 96
 ```
 python train_dagan_with_matchingclassifier.py --dataset animsl --image_width 96 --batch_size 20  --experiment_title MMF2GAN/animals1way3shot   --selected_classes 1 --support_number 3  --loss_G 1 --loss_D 1 --loss_CLA 1  --loss_recons_B 1 --loss_matching_G 0.01 --loss_matching_D 1 --loss_sim 1 
 ```
+
+
+### Trained Model
+
+* Omniglot: [omniglot_trained model](https://pan.baidu.com/s/10jVcjN1uPb2wAWudS8cYyg), extracted code: vtmq.
+
+* EMNIST: [emnist_trained model](https://pan.baidu.com/s/1OAAr7SE4rBFmqTLjP0Gv4w), extracted code: usgq.
+
+* VGGFace: [vggface_trained model](https://pan.baidu.com/s/1kl7xBu-2paKcifgluv01KA), extracted code: ece6.
+
+* Flowers: [flowers_trained model](https://pan.baidu.com/s/1csEXu6UT0qpj8qW5G9Y5ew), extracted code: xfei.
+
+* Animal Faces: [animals_trained model](https://pan.baidu.com/s/1ro1XljphBYRQaXoj4P6OhQ), extracted code: fdb2.
+
 
 
 ### Testing
