@@ -36,8 +36,7 @@ Few-shot image generation aims at generating images for a new category with only
 
 
 
-## Poster Presentation
-![](figures/F2GAN_ACMMM_poster.jpg)
+
 
 
 
@@ -210,6 +209,11 @@ python test_dagan_with_matchingclassifier_for_generation.py  --is_training 0 --i
 python GAN_metrcis_FID_IS_LPIPS.py  --dataroot_real ./EVALUATION/Augmented/animals/F2GAN/visual_outputs_realimages/ --dataroot_fake  ./EVALUATION/Augmented/animals/F2GAN/visual_outputs_forquality/  --image_width 128 --image_channel 3 --augmented_support 100  --dir ./EVALUATION/Augmented/animals/F2GAN/visual_outputs_forquality/ --out ./EVALUATION/Augmented/animals/F2GAN/GAN_METRICS.txt 
 
 ```
+
+
+## Poster Presentation
+![](figures/F2GAN_ACMMM_poster.jpg)
+
 
 
 ## Acknowledgement
