@@ -43,7 +43,7 @@ Few-shot image generation aims at generating images for a new category with only
 
 ### Hardware& Software Dependency
 
-- **Hardware ** 
+- **Hardware** 
     
   a single GPU or multiple GPUs
   
