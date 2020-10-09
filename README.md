@@ -10,7 +10,7 @@ Paper Link: [[arXiv]](https://arxiv.org/pdf/2008.01999.pdf)
 ## Visualization on Selected Five Datasets 
 
 [![Visualization]](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/master/figures/visualization.png?raw=true)
-* Click []() to view more visualization results.
+* Click [here]() to view more visualization results.
 ## Citation
 
 If you find our work useful in your research, please consider citing:
@@ -41,53 +41,54 @@ Few-shot image generation aims at generating images for a new category with only
 ## Experiments
 
 ### Hardware& Software Dependency
-- Hardware
-    
-  ** a single GPU or multiple GPUs
-  
-- Software
 
-  ** Tensorflow-gpu (version >= 1.7)
+- **Hardware ** 
+    
+  a single GPU or multiple GPUs
   
-  ** Opencv
+- **Software** 
+
+  Tensorflow-gpu (version >= 1.7)
   
-  ** scipy  
+  Opencv
+  
+  scipy  
   
 - Click [here](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/three/main/requirements.txt) to view detailed software dependency            
   
 
 ### Datasets Preparation 
 * The Download links can be found [here](https://github.com/bcmi/Awesome-Few-Shot-Image-Generation#Datasets)
-- Omniglot
+- **Omniglot**
     
-  **Categories/Samples:** 1412/ 32460
+  Categories/Samples: 1412/ 32460
   
-  **Split:** 1200 seen classes, 212 unseen classes
+  Split: 1200 seen classes, 212 unseen classes
  
-- Emnist
+- **Emnist**
 
-  **Categories/Samples:** 38/ 106400
+  Categories/Samples: 38/ 106400
   
-  **Split:** 28 seen classes, 10 unseen classes
+  Split: 28 seen classes, 10 unseen classes
   
   
-- VGGFace
+- **VGGFace**
 
-  **Categories/Samples:** 2299/ 229900
+  Categories/Samples: 2299/ 229900
   
-  **Split:** 1802 seen classes, 497 unseen classes
+  Split: 1802 seen classes, 497 unseen classes
   
-- Flowers
+- **Flowers**
 
-  **Categories/Samples:** 102/ 8189
+  Categories/Samples:** 102/ 8189
   
-  **Split:** 85 seen classes, 17 unseen classes
+  Split:** 85 seen classes, 17 unseen classes
       
-- Animal Faces
+- **Animal Faces**
 
-  **Categories/Samples:** 149/ 214105
+  Categories/Samples: 149/ 214105
   
-  **Split:** 119 seen classes, 30 unseen classes
+  Split: 119 seen classes, 30 unseen classes
 
 
 
@@ -97,14 +98,14 @@ Few-shot image generation aims at generating images for a new category with only
 
 #### Visualization of Generated Images
 
-[![Vislualization]](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/three/main/figures/combo.jpg?raw=true)
+[![Vislualization](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/three/main/figures/combo.jpg?raw=true)
 
 #### Low-data Image Classification
-[![Low-data Image Classification](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/master/figures/lowdata.jpg?raw=true)
+[![Low-data Image Classification](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/three/main/figures/lowdata.jpg?raw=true)
 
 
 #### Few-shot Image Classification
-[![Few-shot Image Classification]](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/master/figures/few_shot.jpg?raw=true)
+[![Few-shot Image Classification](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/three/main/figures/few_shot.jpg?raw=true)
 
 
 ## Getting Started
