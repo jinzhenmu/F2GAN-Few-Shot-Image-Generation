@@ -7,10 +7,7 @@ Created by [Yan Hong](https://github.com/hy-zpg),  [Li Niu\*](https://github.com
 Paper Link: [[arXiv]](https://arxiv.org/pdf/2008.01999.pdf)
 
 
-## Visualization on Selected Five Datasets 
 
-[![Visualization]](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/master/figures/visualization.png?raw=true)
-* Click [here]() to view more visualization results.
 ## Citation
 
 If you find our work useful in your research, please consider citing:
