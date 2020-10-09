@@ -30,8 +30,6 @@ Few-shot image generation aims at generating images for a new category with only
 
 ![](figures/framework.png)
 
-[![Overview of Our CaGNet](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/three/main/figures/framework.png)](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/three/main/figures/framework.png)
-
 
 
 
@@ -39,7 +37,8 @@ Few-shot image generation aims at generating images for a new category with only
 
 
 ## Poster Presentation
-[![Poster](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/three/main/figuresF2GAN_ACMMM_poster.jpg?raw=true)](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/three/main/figuresF2GAN_ACMMM_poster.jpg?raw=true)
+![](figures/F2GAN_ACMMM_poster.jpg)
+
 
 
 ## Experiments
@@ -102,14 +101,20 @@ Few-shot image generation aims at generating images for a new category with only
 
 #### Visualization of Generated Images
 
-[![Vislualization](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/three/main/figures/combo.jpg?raw=true)
+![](figures/combo.jpg)
+
 
 #### Low-data Image Classification
-[![Low-data Image Classification](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/three/main/figures/lowdata.jpg?raw=true)
+
+![](figures/lowdata.jpg)
+
+
 
 
 #### Few-shot Image Classification
-[![Few-shot Image Classification](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/three/main/figures/few_shot.jpg?raw=true)
+
+![](figures/few_shot.jpg)
+
 
 
 ## Getting Started
