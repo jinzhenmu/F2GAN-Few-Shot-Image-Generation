@@ -93,9 +93,9 @@ More generated reuslts to view [here]()
   Split: 119 seen classes, 30 unseen classes
   
   
-## Baselines
+### Baselines
 
-### Few-shot Image Generation
+#### Few-shot Image Generation
 
 * FIGR: Few-shot Image Generation with Reptile [paper](http://proceedings.mlr.press/v84/bartunov18a/bartunov18a.pdf)  [code](https://github.com/sbos/gmn)
 
@@ -105,7 +105,7 @@ More generated reuslts to view [here]()
 
 * Data Augmentation Generative Adversarial Networks [paper](https://arxiv.org/pdf/1711.04340)  [code](https://github.com/AntreasAntoniou/DAGAN)
 
-### Few-shot Image Classification
+#### Few-shot Image Classification
 * Matching Networks for One Shot Learning [paper](https://arxiv.org/pdf/1606.04080.pdf)  [code](https://github.com/AntreasAntoniou/MatchingNetworks)
 
 * Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks [paper](https://arxiv.org/pdf/1703.03400.pdf)  [code](https://github.com/cbfinn/maml)
@@ -121,27 +121,9 @@ More generated reuslts to view [here]()
 
 
 
-### Results
-
-#### GAN metrics of Generated Images
-
-![](figures/metric.jpg)
 
 
-#### Low-data Image Classification
-
-![](figures/lowdata.jpg)
-
-
-
-
-#### Few-shot Image Classification
-
-![](figures/fewshot.jpg)
-
-
-
-## Getting Started
+### Getting Started
 
 ### Installation
 
@@ -234,6 +216,25 @@ python test_dagan_with_matchingclassifier_for_generation.py  --is_training 0 --i
 python GAN_metrcis_FID_IS_LPIPS.py  --dataroot_real ./EVALUATION/Augmented/animals/F2GAN/visual_outputs_realimages/ --dataroot_fake  ./EVALUATION/Augmented/animals/F2GAN/visual_outputs_forquality/  --image_width 128 --image_channel 3 --augmented_support 100  --dir ./EVALUATION/Augmented/animals/F2GAN/visual_outputs_forquality/ --out ./EVALUATION/Augmented/animals/F2GAN/GAN_METRICS.txt 
 
 ```
+
+### Results
+
+#### GAN metrics of Generated Images
+
+![](figures/metric.jpg)
+
+
+#### Low-data Image Classification
+
+![](figures/lowdata.jpg)
+
+
+
+
+#### Few-shot Image Classification
+
+![](figures/fewshot.jpg)
+
 
 
 ## Poster Presentation
