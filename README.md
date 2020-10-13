@@ -317,6 +317,8 @@ setting the '--selected_classes' as N.
 
 ### Results
 
+To view more clear results, please click the belowing tables.
+
 #### GAN metrics of Generated Images
 
 ![](figures/metric.jpg)
