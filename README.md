@@ -201,18 +201,18 @@ python train_dagan_with_matchingclassifier.py --dataset animsl --image_width 96 
 
 
 
-### Testing
+### Evaluation from three aspects including GAN metrics, low-data classification, and few-shot classification.
 
 #### Obtaining the generated images based on trained models, the generated images are stored in the path '--experiment_title'
 
 **Omniglot generated images**
 ```
-python test_dagan_with_matchingclassifier_for_generation.py  --is_training 0 --is_all_test_categories 1 --is_generation_for_classifier 1  --general_classification_samples 10 --dataset omniglot --image_width 96  --batch_size 30  --num_generations 28 --experiment_title EVALUATION_Augmented_omniglot_F2GAN --selected_classes 1 --support_number 3   --restore_path path ./trained_models/omniglot/ --continue_from_epoch 100
+python test_dagan_with_matchingclassifier_for_generation.py  --is_training 0 --is_all_test_categories 1 --is_generation_for_classifier 1  --general_classification_samples 10 --dataset omniglot --image_width 28  --batch_size 30  --num_generations 128 --experiment_title EVALUATION_Augmented_omniglot_F2GAN --selected_classes 1 --support_number 3   --restore_path path ./trained_models/omniglot/ --continue_from_epoch 100
 ```
 
 **EMNIST generated images**
 ```
-python test_dagan_with_matchingclassifier_for_generation.py  --is_training 0 --is_all_test_categories 1 --is_generation_for_classifier 1  --general_classification_samples 10 --dataset emnist --image_width 96  --batch_size 30  --num_generations 28 --experiment_title EVALUATION_Augmented_emnist_F2GAN --selected_classes 1 --support_number 3   --restore_path   ./trained_models/emnist/  --continue_from_epoch 100
+python test_dagan_with_matchingclassifier_for_generation.py  --is_training 0 --is_all_test_categories 1 --is_generation_for_classifier 1  --general_classification_samples 10 --dataset emnist --image_width 28  --batch_size 30  --num_generations 128 --experiment_title EVALUATION_Augmented_emnist_F2GAN --selected_classes 1 --support_number 3   --restore_path   ./trained_models/emnist/  --continue_from_epoch 100
 ```
 
 **VGGFace generated images**
@@ -263,34 +263,40 @@ python GAN_metrcis_FID_IS_LPIPS.py  --dataroot_real ./EVALUATION/Augmented/anima
 
 
 #### Testing the classification in low-data setting with augmented images.
-1. Preparing generated images: the generated images are stored in the 'storepath/visual_outputs_forclassifier' and setting the storepath for preprocessed data, running below script
+take Omniglot as example, low-data classification with augmented images generated from our trained model
+
+1. Gnerating augmented images using three conditional images
+```
+python test_dagan_with_matchingclassifier_for_generation.py  --is_training 0 --is_all_test_categories 1 --is_generation_for_classifier 1  --general_classification_samples 10 --dataset omniglot --image_width 96  --batch_size 30  --num_generations 512 --experiment_title EVALUATION_Augmented_omniglot_F2GAN --selected_classes 1 --support_number 3   --restore_path path ./trained_models/omniglot/ --continue_from_epoch 100
+```
+
+2. Preparing generated images: the generated images are stored in the 'storepath/visual_outputs_forclassifier' and setting the storepath for preprocessed data, running below script
 
 ```
-python data_preparation.py --dataroot storepath/visual_outputs_forclassifier  --storepath --image_width 96 --channel 3 
+python data_preparation.py --dataroot storepath/visual_outputs_forclassifier  --storepath --image_width 28 --channel 1 
 ```
-2. Replacing the datapath in data_with_matchingclassifier_for_quality_and_classifier.py with the storepath for preprocessed data.
+3. Replacing the datapath in data_with_matchingclassifier_for_quality_and_classifier.py with the storepath for preprocessed data.
 
-3. Running the script for low-data classification.
+4. Running the script for low-data classification.
 
 ```
-train_classifier_with_augmented_images.py --dataset flowers  --selected_classes testing_categories  --batch_size 16 --classification_total_epoch 50  --experiment_title AugmentedLowdataClassifier_flowers  --image_width 128  --image_height 128 --image_channel 3
+train_classifier_with_augmented_images.py --dataset omniglot  --selected_classes testing_categories  --batch_size 16 --classification_total_epoch 50  --experiment_title AugmentedLowdataClassifier_omniglot  --image_width 28  --image_height 28 --image_channel 1
 ```
---dataset: omniglot/emnist/vggface/flowers/animals
 --selected_classes: the number of total testing categories
 
 
 #### Testing the classification in few-shot setting with augmented images.
-take Omniglot as example, NwayKshot classification with augmented images from our trained model
+take Omniglot as example, NwayKshot classification with augmented images generated from our trained model
 
 1. Gnerating augmented images using Kshot conditional images
 ```
-python test_dagan_with_matchingclassifier_for_generation.py  --is_training 0 --is_all_test_categories 1 --is_generation_for_classifier 1  --general_classification_samples 10 --dataset omniglot --image_width 96  --batch_size 30  --num_generations 28 --experiment_title EVALUATION_Augmented_omniglot_F2GAN --selected_classes 1 --support_number K   --restore_path path ./trained_models/omniglot/ --continue_from_epoch 100
+python test_dagan_with_matchingclassifier_for_generation.py  --is_training 0 --is_all_test_categories 1 --is_generation_for_classifier 1  --general_classification_samples 10 --dataset omniglot --image_width 28  --batch_size 30  --num_generations 128 --experiment_title EVALUATION_Augmented_omniglot_F2GAN --selected_classes 1 --support_number K   --restore_path path ./trained_models/omniglot/ --continue_from_epoch 100
 ```
 setting the '--support_number' as K.
 
 2. Preprocessing the generated images
 ```
-python data_preparation.py --dataroot ./EVALUATION/Augmented/omniglot/F2GAN/visual_outputs_forclassifier  --storepath ./EVALUATION/Augmented/omniglot/F2GAN/  --image_width 96 --channel 3 
+python data_preparation.py --dataroot ./EVALUATION/Augmented/omniglot/F2GAN/visual_outputs_forclassifier  --storepath ./EVALUATION/Augmented/omniglot/F2GAN/  --image_width 28 --channel 1 
 ```
 
 3. Replacing the datapath in data_with_matchingclassifier_for_quality_and_classifier.py with ./EVALUATION/Augmented/omniglot/F2GAN/omniglot.npy.
@@ -298,7 +304,7 @@ python data_preparation.py --dataroot ./EVALUATION/Augmented/omniglot/F2GAN/visu
 4. Running the script for few-shot classification.
 
 ```
-train_classifier_with_augmented_images.py --dataset omniglot  --selected_classes N  --batch_size 16 --classification_total_epoch 50  --experiment_title AugmentedFewshotClassifier_  --image_width 128  --image_height 128 --image_channel 3
+train_classifier_with_augmented_images.py --dataset omniglot  --selected_classes N  --batch_size 16 --classification_total_epoch 50  --experiment_title AugmentedFewshotClassifier_  --image_width 28  --image_height 28 --image_channel 1
 ```
 setting the '--selected_classes' as N.
 
