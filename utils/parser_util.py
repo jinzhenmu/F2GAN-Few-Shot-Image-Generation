@@ -56,15 +56,15 @@ def get_args():
     parser.add_argument('--loss_matching_D', type=float, default=0.01)
     parser.add_argument('--loss_sim', type=float, default=1e2)
 
-    parser.add_argument('--is_z2', nargs="?", type=int, default=1)
-    parser.add_argument('--is_z2_vae', nargs="?", type=int, default=1)
+    parser.add_argument('--is_z2', nargs="?", type=int, default=0)
+    parser.add_argument('--is_z2_vae', nargs="?", type=int, default=0)
 
     parser.add_argument('--image_width', nargs="?", type=int, default=128)
     parser.add_argument('--image_height', nargs="?", type=int, default=128)
     parser.add_argument('--image_channel', nargs="?", type=int, default=3)
     parser.add_argument('--strategy', nargs="?", type=int, default=2)
     parser.add_argument('--is_all_test_categories', nargs="?", type=int, default=1)
-    parser.add_argument('--generation_layers', nargs="?", type=int, default=10)
+    parser.add_argument('--generation_layers', nargs="?", type=int, default=4)
     parser.add_argument('--is_generation_for_classifier', nargs="?", type=int, default=0)
 
     args = parser.parse_args()
