@@ -29,14 +29,14 @@ def get_args():
                         help='The number of samples generated for use in the spherical interpolations at the end of '
                              'each epoch')
 
-    parser.add_argument('--support_number', nargs="?", type=int, default=5,
+    parser.add_argument('--support_number', nargs="?", type=int, default=3,
                         help='The number of samples generated for use in the spherical interpolations at the end of '
                              'each epoch')
 
     parser.add_argument('--use_wide_connections', nargs="?", type=str, default="False",
                         help='Whether to use wide connections in discriminator')
 
-    parser.add_argument('--matching', nargs="?", type=int, default=0)
+    parser.add_argument('--matching', nargs="?", type=int, default=1)
     parser.add_argument('--fce', nargs="?", type=int, default=0)
     parser.add_argument('--full_context_unroll_k', nargs="?", type=int, default=4)
     parser.add_argument('--average_per_class_embeddings', nargs="?", type=int, default=0)
